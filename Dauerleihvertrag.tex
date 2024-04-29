@@ -1,0 +1,246 @@
+\documentclass[article, 11pt,a4paper, titlepage, parskip=half, bibliography=totocnumbered]{scrreprt}
+
+\usepackage{sectsty}
+\sectionfont{\centering}
+
+\usepackage[a4paper,lmargin=2.5cm,rmargin=2cm,tmargin=2.5cm,bmargin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{lmodern}
+\usepackage[juratotoc]{scrjura}
+\usepackage{color}
+%\usepackage{wasysym} % für die benutzten Symbole
+\usepackage{amssymb}
+\usepackage[official]{eurosym}
+\usepackage{multicol}
+\usepackage{tikz}
+\usepackage{fancyhdr} 	%needed for advanced footer (page x of y)
+	\pagestyle{fancy}
+	\fancyhf{} % clear existing header/footer entries
+\usepackage{lastpage}
+
+
+\makeatletter 
+\renewcommand*{\parformat}{% 
+	\global\hangindent 2em 
+	\makebox[2em][l]{(\thepar)\hfill}%
+}  
+\makeatother
+\renewcommand*{\parformatseparation}{} %needed for advanced footer (page x of y)
+\renewcommand{\headrulewidth}{0pt} %remove line on top of fancy package
+
+\fancyfoot[C]{Seite \thepage \hspace{1pt} von \pageref{LastPage}}
+
+	\IfFileExists{Parteien.tex}
+{
+	\input{Parteien.tex}
+}
+{
+	\def\GeberNameAnschrift{Leihgeber*in Name, Anschrift}
+	\def\GeberKontaktAllgemein{Telefon, E-Mail}
+	\def\GeberKontaktPerson{Leihgeber*in Kontaktperson Daten}
+	
+	\def\NehmerNameAnschrift{Leihnehmer*in Name, Anschrift}
+	\def\NehmerKontaktAllgemein{Telefon, E-Mail}
+	\def\NehmerKontaktPerson{Leihnehmer*in Kontaktperson Daten}
+}
+
+\begin{document}
+	\setcounter{page}{1}
+	\addchap{Dauerleihvertrag}
+	\thispagestyle{fancy}
+	
+	\textbf{zwischen}
+	
+	\GeberNameAnschrift \\
+	\GeberKontaktAllgemein \\
+	vertreten durch \\
+	\GeberKontaktPerson \\
+		
+	\textbf{als «Leihgeberin/Leihgeber»} \\
+	
+	\textbf{und}
+	
+	\NehmerNameAnschrift \\
+	\NehmerKontaktAllgemein \\
+	vertreten durch \\
+	\NehmerKontaktPerson \\
+	
+	\textbf{als «Leihnehmerin/Leihnehmer»} \\
+	
+	\textbf{wird folgender Vertrag geschlossen:}
+	
+	\begin{contract}
+		\Clause{title={Vertragsgegenstand}}
+		
+		\parnumberfalse
+		Die Leihgeberin/der Leihgeber stellt der Leihnehmerin/dem Leihnehmer nachfolgend aufgeführte/s, in seinem Eigentum befindliche/s Objekt/e unentgeltlich zur Verfügung:
+			
+		\begin{table}[htbp]
+			\begin{tabular}{rrlr}
+				\multicolumn{1}{l}{$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$} & \multicolumn{2}{l}{Bierpongtisch (Standard)} & \multicolumn{1}{l}{Anzahl:} \\
+				&       Maße: 				& 240 x 60 x 80 cm & \\
+				&       Gewicht:			& ca. 8 kg 	& \\
+				&       Einzelwert: 		& 160 \EUR 	& \\
+				&       ~~~~ ggf. Garantie bis einschließlich:	& & \\
+				&       ggf. Inventarnummer: 				& & \\
+				\multicolumn{1}{l}{$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$} & \multicolumn{2}{l}{Bierpongtisch (Personalisierter Druck) ~~} & \multicolumn{1}{l}{Anzahl:} \\
+								&       Maße: 				& 240 x 60 x 80 cm & \\
+				&       Gewicht:			& ca. 8 kg 	& \\
+				&       Einzelwert: 		& 160 \EUR 	& \\
+				&       ~~~~ ggf. Garantie bis einschließlich:	& & \\
+				\multicolumn{1}{l}{$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$} & \multicolumn{2}{l}{Anderes Objekt, Beschreibung nachfolgend} & \multicolumn{1}{l}{Anzahl:} \\
+				&       Objektbezeichnung: 					& &  \\
+				&       ggf. Objektbeschreibung: 		& &  \\
+				&       Maße: 								& & \\
+				&       Gewicht: 							& & \\
+				&       Einzelwert: 						& & \\
+				&       ~~~~ ggf. Garantie bis einschließlich:	& & \\
+				&       ggf. Inventarnummer: 				& & \\
+			\end{tabular}%
+		\end{table}%
+		\parnumbertrue
+		
+		\newpage
+			
+		\Clause{title={Verpflichtungen}}
+		
+		Die Leihnehmerin/der Leihnehmer ist ohne Erlaubnis der Leihgeberin/des Leihgebers nicht berechtigt, die Objekte Dritten zu überlassen.
+		
+		Die Leihnehmerin/der Leihnehmer verpflichtet sich, die ihm überlassenen Objekte während der Nutzung, der Lagerung und dem Transport sorgsam, sachgerecht und pfleglich zu behandeln und vor Beschädigung sowie Verlust, insbesondere vor Entwendung, zu schützen.
+		
+		Bei Verlust oder Beschädigung ist von der Leihnehmerin/dem Leihnehmer nur der Zeitwert des geliehenen Gegenstandes zu erstatten.
+		
+		Der Transport erfolgt in Absprache zwischen der Leihgeberin/dem Leihgeber und der Leihnehmerin/dem Leihnehmer. Alle logistischen Aspekte sind von der Leihnehmerin/dem Leihnehmer zu klären und organisieren. Anfallende Kosten für Verpackung und Transport trägt die Leihnehmerin/der Leihnehmer.
+		
+		Über eventuelle Veränderungen, Beschädigungen oder den Verlust der entliehenen Objekte ist die Leihgeberin/der Leihgeber unverzüglich in Kenntnis zu setzen.
+		
+		Die Leihnehmerin/der Leihnehmer führt notwendige Erhaltungsmaßnahmen und Restaurierungen an den entliehenen Objekten nur nach vorheriger Rücksprache und Abstimmung mit der Leihgeberin/dem Leihgeber durch. Die Kosten für diese Maßnahmen trägt die Leihnehmerin/der Leihnehmer.
+		
+		Sowohl bei Übergabe der Ware als auch bei Rückgabe ist der Zustand der Leihgabe(n) zu dokumentieren. Besagte Dokumentation (siehe §12 Zustand der Leihgabe) ist von beiden Parteien zu unterzeichnen.
+		
+		
+		\Clause{title={Vertragsdauer und Kündigung}}
+		
+		Der Vertrag wird zunächst für die Dauer von zwei Jahren geschlossen. Er verlängert sich jeweils um ein Jahr, wenn er nicht mit einer Frist von einem Monat zum Ende der Laufzeit gekündigt wird.
+		
+		Der Vertrag ist durch die Leihnehmerin/den Leihnehmer jederzeit kündbar. Die Rückgabe der entliehenen Objekte ist durch die Leihnehmerin/den Leihnehmer nach Absprache innerhalb einer angemessenen Frist, spätestens jedoch nach sechs Monaten nach dem Eingang der Kündigung, vorzunehmen.
+		
+		Eine außerordentliche Kündigung durch die Leihgeberin/den Leihgeber ist möglich, beispielsweise wegen Eigenbedarfs oder, wenn die Leihnehmerin/der Leihnehmer einen vertragswidrigen Gebrauch von den entliehenen Objekten macht, insbesondere sie unbefugt Dritten überlässt oder die Objekte durch Vernachlässigung der ihm obliegenden Sorgfaltspflicht erheblich gefährdet.
+		
+
+		\Clause{title={Annahme}}
+		
+		Die Leihnehmerin/ der Leihnehmer hat den Gegenstand/die Gegenstände am Liefertag/während der Lieferfrist am Erfüllungsort anzunehmen/abzuholen.
+		
+		Ist die Leihnehmerin/der Leihnehmer mit der Annahme des Gegenstandes/der Gegenstände in Verzug, so kann die Leihgeberin/der Leihgeber der Leihnehmerin/ dem Leihnehmer eine Nachfrist von 14 Tagen setzen und nach deren unbenutztem Ablauf entweder innerhalb 14 Tagen den Rücktritt vom Vertrag erklären oder weiterhin die Annahme verlangen.
+		
+		
+		\Clause{title={Ansprüche des Leihnehmerin/Leihnehmer}}
+		
+		Hat die Leihgeberin/der Leihgeber vertragswidrige Ware geliefert, so kann die Leihnehmerin/der Leihnehmer von der Leihgeberin/ dem Leihgeber zunächst nur verlangen, dass er die Vertragswidrigkeit nach seiner Wahl durch Nachbesserung oder Ersatzlieferung kostenlos und ohne unverhältnismässige Unannehmlichkeiten für den Leihnehmerin/Leihnehmer behebt. Die Leihnehmerin/der Leihnehmer kann der Leihgeberin/dem Leihgeber dafür eine angemessene Frist von mindestens 14 Tagen setzen. Hat die Leihgeberin/der Leihgeber die Vertragswidrigkeit innerhalb dieser Frist nicht behoben, so kann die Leihnehmerin/der Leihnehmer vom Vertrag zurücktreten.
+		
+		
+		\Clause{title={Verwirkung}}
+		
+		Ansprüche aus bei einer übungsgemässen Untersuchung erkennbaren Vertragswidrigkeiten sind verwirkt, wenn diese der Leihnehmerin/Leihnehmer der Leihgeberin/des Leihgeber nicht innerhalb 14 Tagen nach Übergabe der Lieferung angezeigt hat.
+		
+		Ansprüche aus anderen Vertragswidrigkeiten sind verwirkt, wenn diese der Leihnehmerin/dem Leihnehmer der Leihgeberin/dem Leihgeber nicht 5 Tage nach ihrer Entdeckung, spätestens jedoch 1 Jahr nach Übergabe der Lieferung bei der Leihgeberin/dem Leihgeber angezeigt hat.
+		
+		Nach einem Leihzeitraum von mehr als 5 Jahren ist mit üblichen Nutzungserscheinungen und Gebrauchsspuren zu rechnen. Eine Entschädigung der Leihgeberin/des Leihgebers hat nach diesem Zeitraum nicht mehr durch die Leihnehmerin/dem Leihnehmer zu erfolgen.
+		
+				
+		\Clause{title={Verjährung}}
+		
+		Die Gewährleistungsansprüche verjähren nach der Überschreitung des angegebenen Garantiedatums unter §1 Vertragsgegenstand.
+				
+		
+		\Clause{title={Schlussbestimmungen}}
+		
+		Der Vertrag unterliegt dem Recht der Bundesrepublik Deutschland.
+		
+		Diese Vereinbarung wird in zwei Exemplaren ausgefertigt und tritt mit ihrer beidseitigen Unterzeichnung in Kraft. Änderungen bedürfen der Schriftform. Dies gilt auch für einen Verzicht auf das Schriftformerfordernis.
+		
+		Mitteilungen, die sich auf diesen Vertrag und seine Abwicklung beziehen, sind in deutscher Sprache zu verfassen und schriftlich oder in einer Form zu übermitteln, welche den Nachweis durch Text ermöglicht, wie namentlich Post und E-Mail.
+		
+		
+		
+		\Clause{title={Salvatorische Klausel}}
+		
+		Sollten eine oder mehrere Bestimmungen dieses Vertrages unwirksam oder nicht durchführbar sein oder werden, wird die Wirksamkeit der übrigen Bestimmungen hierdurch nicht berührt. In einem derartigen Fall werden die Vertragsparteien die ungültige oder nicht durchführbare Bestimmung durch eine wirksame Bestimmung ersetzen, welche dem wirtschaftlichen Zweck der ungültigen Bestimmung möglichst nahekommt. Gleiches gilt für den Fall, dass dieser Vertrag eine Lücke enthalten sollte oder dass sich bei dessen Durchführung Lücken herausstellen sollten.
+		
+		
+		\Clause{title={Mediationsklausel und Gerichtsstand}}
+		
+		Sollte es im Zusammenhang mit diesem Vertrag oder dessen Gültigkeit zu Streitigkeiten kommen, beabsichtigen die Parteien, zunächst eine Mediation durch einen unparteiischen Dritten einzuleiten, und ordentliche Klagen erst zu erheben, wenn in der Mediation keine gütliche Einigung gefunden werden konnte.
+		
+		Ausschließlicher Gerichtsstand ist Regensburg.
+
+		\Clause{title={Zusätzliche Vereinbarungen}}
+		Zusätzliche Vereinbarungen können nachfolgend vermerkt werden: \\
+		\begin{tikzpicture}
+			\draw [draw=black] (17,12) rectangle (0.3,0.3);
+		\end{tikzpicture}
+		\newpage
+		
+		\Clause{title={Zustand der Leihgabe}}
+		\parnumberfalse
+		
+		\begin{multicols}{2}
+				Zustand bei Übergabe \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Neuware \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Leichte Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Mittlere Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Starke Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Nicht zutreffend \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ \\
+			
+				~ \\
+				Mit der Unterschrift des Vertrages wird der Zustand zum Übergabezeitpunkt dokumentiert und bestätigt. Der Rückgabezustand ist gesondert zu vermerken sowie schriftlich zu bestätigen. \\
+				(siehe §2 Verpflichtungen) \\ \\
+				Platz für Anmerkungen zum Zustand: \\
+				\begin{tikzpicture}
+					\draw [draw=black] (8.5,4) rectangle (0.3,0.3);
+				\end{tikzpicture}
+				
+			
+			\columnbreak
+				Zustand bei Rückgabe \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Neuware \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Leichte Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Mittlere Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Starke Gebrauchsspuren \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ Nicht zutreffend \\
+				$\makebox[20pt][L]{$\square$}\raisebox{.15ex}{\hspace{0.1em}}$ \\
+				
+							
+				\textbf{Bei Rückgabe zu unterschreiben:} \\
+				
+				%\vspace{1cm}
+				
+				\noindent\rule{7cm}{.4pt} \\ 
+				Datum, Ort \\
+				
+				\noindent\rule{7cm}{.4pt} \\ 
+				Unterschrift Leihnehmerin/Leihnehmer \\
+				
+				\noindent\rule{7cm}{.4pt} \\ 
+				Unterschrift Leihgeberin/Leihgeber \\
+		\end{multicols}
+		
+		\vspace{2 cm} 
+		\textbf{Bei Vertragsschluss auszufüllen:}\\
+	
+
+
+	\end{contract}
+	\vspace{50pt} 
+	\noindent\rule{7cm}{.4pt}\hfill\rule{7cm}{.4pt}\par 
+	\noindent Datum, Ort \hfill Unterschrift Leihnehmerin/Leihnehmer
+	
+	\vspace{50pt} 
+	\noindent\rule{7cm}{.4pt}\hfill\rule{7cm}{.4pt}\par 
+	\noindent Datum, Ort \hfill Unterschrift Leihgeberin/Leihgeber
+	
+\end{document}
