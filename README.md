@@ -1,7 +1,7 @@
 # Dauerleihvertrag Vorlage (WIP!)
 
 ## Allgemeine Informationen
-Da es leider keine allgemein gehaltenen Dauerleihverträge als Vorlage gibt, stelle ich hier meinen LaTeX-SourceCode mit einer [Beispiel-PDF](https://raw.githubusercontent.com/PedPEx/Dauerleihvertrag-Vorlage/main//Dauerleihvertrag_Beispiel.pdf) zur Verfügung. 
+Da es leider keine allgemein gehaltenen Dauerleihverträge als Vorlage gibt, stelle ich hier meinen LaTeX-SourceCode mit einer [Beispiel-PDF](https://github.com/PedPEx/Dauerleihvertrag-Vorlage/blob/master/Dauerleihvertrag_Beispiel.pdf) zur Verfügung. 
 
 ## Nutzung
 Um die Parteien an zu passen, empfielt es sich die Datei `Parteien_Vorlage.tex` zu korrigieren und in `Parteien.tex` um zu benennen. Die Änderungen werden automatisch einbezogen.
