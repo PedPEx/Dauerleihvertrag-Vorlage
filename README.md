@@ -11,4 +11,4 @@ Um die Parteien an zu passen, empfielt es sich die Datei `Parteien_Vorlage.tex` 
 - [Dauerleihvertrag des Röhnmuseums Fladungen](http://www.rhoenmuseum.mydcpro.de/fileServer/RHOENMUSEUM/1098/17292/Dauerleihvertrag_Rhoenmuseum.pdf)
 
 ## Haftungsausschluss - Verwendung auf eigene Gefahr!
-Die Verwendung dieses Dokumentes oder eigener Abwandlungen davon unterliegen keinerlei Garantie auf Richtigkeit und/oder rechtlicher Sicherheit. Ich übernehme keinerlei Haftung für Schäden, Ersatzansprüche oder anderweite Probleme verursacht durch die Nutzung dieses Dokumentes!
+Die Verwendung dieses Dokumentes oder eigener Abwandlungen davon unterliegen keinerlei Garantie auf Richtigkeit und/oder rechtlicher Sicherheit. Ich übernehme keinerlei Haftung für Schäden, Ersatzansprüche oder anderweitige Probleme verursacht durch die Nutzung dieses Dokumentes!
